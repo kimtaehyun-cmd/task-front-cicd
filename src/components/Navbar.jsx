@@ -40,6 +40,7 @@ const Navbar = ({ menuIdx }) => {
         // 구글 값 초기화
         client_id: googleClientId,
         callback: handleLoginSucess,
+        use_fedcm_for_prompt: false,
       });
     }
   }, [googleClientId, handleLoginSucess]);
