@@ -39,3 +39,5 @@ jobs:
 
       - name: Run container
         run: docker run -d -p 80:80 --name reactContainer taehyun224/task-front-cicd
+
+      - run: pm2 restart BackendAPI
